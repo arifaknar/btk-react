@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 
-export default class ProductList extends Component {
-
- 
-
+export default class Navi extends Component {
   render() {
     return (
       <>
-        {this.props.info.title}
+        Navi
       </>
     )
   }
