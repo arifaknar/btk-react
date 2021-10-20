@@ -9,6 +9,7 @@ import {
   NavLink
 } from 'reactstrap';
 import CartSummary from './CartSummary';
+import { Link } from 'react-router-dom';
 
 export default function Navi({ removeFromCart,cart,}) {
 
@@ -24,7 +25,16 @@ export default function Navi({ removeFromCart,cart,}) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <Link to="/"><NavLink>Homepage</NavLink> </Link>
+              
+            </NavItem>
+            <NavItem>
+              <Link to="/form"><NavLink>Form</NavLink> </Link>
+              
+            </NavItem>
+            <NavItem>
+              <Link to="/form2"><NavLink>Form 2</NavLink> </Link>
+              
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
